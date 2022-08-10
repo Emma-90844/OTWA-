@@ -3,7 +3,6 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupIcon from '@mui/icons-material/Group';
 import Inventory2Icon from '@mui/icons-material/Inventory2';
-import BorderColorIcon from '@mui/icons-material/BorderColor';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
