@@ -1,41 +1,93 @@
-.navbar{
+.navbar {
     height: 50px;
-    border-bottom
+    border-bottom: 1px solidrgb(193, 244, 12);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(193, 244, 12);
+    background-color: #3aa323;
+
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        // background-color: red; 
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .search {
+        display: flex;
+
+        align-items: center;
+        border: 0.5px solid rgb(193, 244, 12);
+        margin: 30px;
+        padding: 4px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            width: 300px;
+            color: white;
+
+            &::placeholder {
+                font-size: 15px;
+                color: white;
+            }
+        }
+
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+       
+
+        .item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+
+            .icon {
+                margin-right: 5px;
+                font-size: 20px;
+            }
+
+            .avatar {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            .counter{
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10px;
+                font-weight: bold;
+                position: absolute;
+                top: -5px;
+                right: -5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
+    }
+}

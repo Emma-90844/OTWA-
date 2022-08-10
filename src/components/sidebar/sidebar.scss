@@ -1,16 +1,19 @@
 .sidebar{
     flex: 1;
     min-height: 100vh;
-    border-right: 0.5px solid rgb(193, 244, 12);  ;
+    // border-right: 0.5px solid rgb(193, 244, 12);  ;
     background-color:#def4d9 ;
     .top{
+         background-color: #DEF4D9;
         height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color:#3aa323  ;
+        
         .logotext{
             font-size: 12px;
+            
         }
     }
     .logo{
@@ -44,6 +47,7 @@
             display: flex;
             align-items: center;
             padding: 5px;
+            
             cursor: pointer;
             &:hover{
                 background-color:rgb(193, 244, 12);   ;
@@ -59,12 +63,14 @@
                 color: #2d9e14;
                 // color: #ffffff;
             }
+          
         }
     }
    .bottom{
     display: flex;
     align-items: center;
     margin: 10px;
+    background-color: #DEF4D9; 
     // background-color: red;
     .colorOption{
         width: 20px;
@@ -76,6 +82,7 @@
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
         margin: 5px;
+        
         cursor: pointer;
         &:nth-child(1){
             background-color: #daff84;
@@ -84,7 +91,7 @@
             background-color: #47bc47;
         }
         &:nth-child(3){
-            background-color: #62bf39;
+            background-color: #62bf39; background-color: #DEF4D9;
         }
 }
    }

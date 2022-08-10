@@ -1,22 +1,14 @@
 .home {
     display: flex;
-    .homeContainer{
-        // background-color: rgb(176, 255, 235);
+    max-width: 1024px;
+    margin: auto;
+    min-height: 100vh;
+    background-color: #f3fff0;
+  
+    
+
+    .homeContainer {
         flex: 2;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

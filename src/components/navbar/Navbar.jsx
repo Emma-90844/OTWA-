@@ -15,27 +15,32 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="search">
           <input type="text" placeholder="Search..." />
-          <PageviewIcon />
+          <PageviewIcon  className="icon"/>
         </div>
 
-        <div className="tems">
+        <div className="items">
             <div className="item">
-                <LanguageOutlinedIcon/> English
+                <LanguageOutlinedIcon  className="icon"/> English
             </div>
             <div className="item">
-                < DarkModeOutlinedIcon/> English
+                < DarkModeOutlinedIcon  className="icon"/> 
             </div>
             <div className="item">
-                < FullscreenExitOutlinedIcon/> English
+                < FullscreenExitOutlinedIcon  className="icon"/> 
             </div>
             <div className="item">
-                < NotificationsOutlinedIcon /> English
+                < NotificationsOutlinedIcon  className="icon"/> 
+                <div className="counter">1</div>
             </div>
             <div className="item">
-                < ChatBubbleOutlinedIcon/> English
+                < ChatBubbleOutlinedIcon  className="icon"/> 
+                <div className="counter">3</div>
             </div>
             <div className="item">
-                < ListOutlinedIcon/> English
+                < ListOutlinedIcon  className="icon"/>
+            </div>
+            <div className="item">
+               <img className="avatar" src=" https://i.pinimg.com/564x/bc/75/88/bc75882d906b263fbe0550fe59dc7b21.jpg" alt="" />
             </div>
 
           
