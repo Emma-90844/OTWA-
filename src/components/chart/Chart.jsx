@@ -7,48 +7,50 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-const Chart = () => {
-  const data = [
-    {
-      name: "January",
-      Total: 4000,
-      users:2000,
-    },
-    {
-      name: "February",
-      Total: 3000,
-      users:1000,
-    },
-    {
-      name: "March",
-      Total: 2000,
-      users:500,
-    },
-    {
-      name: "April",
-      Total: 2780,
-      users:2000,
-    },
-    {
-      name: "May",
-      Total: 1890,
-      users:4000,
-    },
-    {
-      name: "June",
-      Total: 2390,
-      users:3000,
-    },
-    {
-      name: "July",
-      Total: 3490,
-      users:2000,
-    },
-  ];
+
+const data = [
+  {
+    name: "January",
+    Total: 4000,
+    users: 2000,
+  },
+  {
+    name: "February",
+    Total: 3000,
+    users: 1000,
+  },
+  {
+    name: "March",
+    Total: 2000,
+    users: 500,
+  },
+  {
+    name: "April",
+    Total: 2780,
+    users: 2000,
+  },
+  {
+    name: "May",
+    Total: 1890,
+    users: 4000,
+  },
+  {
+    name: "June",
+    Total: 2390,
+    users: 3000,
+  },
+  {
+    name: "July",
+    Total: 3490,
+    users: 2000,
+  },
+];
+
+const Chart = ({ aspect, title }) => {
   return (
     <div className="chart">
-        <div className="title">Last 6 Months (Revenue)</div>
-      <ResponsiveContainer  aspect={2 / 1}>
+      <div className="title">{title}</div>
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={730}
           height={250}
@@ -65,10 +67,9 @@ const Chart = () => {
               <stop offset="5%" stopColor="#84d887" stopOpacity={0.8} />
               <stop offset="95%" stopColor="#84d891" stopOpacity={0} />
             </linearGradient>
-           
           </defs>
           <XAxis dataKey="name" />
-          <CartesianGrid strokeDasharray="3 3" className="chartGrid"/>
+          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
           <Tooltip />
           <Area
             type="monotone"

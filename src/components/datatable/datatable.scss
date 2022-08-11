@@ -1,0 +1,75 @@
+.datatable {
+    height: 500px;
+    padding: 20px;
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        &.active {
+            background-color: rgb(227, 255, 227);
+            color: rgb(1, 163, 1);
+        }
+
+        &.passive {
+            color: rgb(240, 111, 82);
+            border: 1px solid rgb(254, 204, 201);
+        }
+
+        &.pending {
+            background-color: rgb(250, 255, 217);
+            color: rgb(174, 176, 69);
+        }
+    }
+
+    .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton {
+            padding: 2px 5px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            color: rgb(135, 135, 203);
+            border: 1px solid rgb(201, 201, 247);
+            cursor: pointer;
+        }
+        .deleteButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            color: rgb(233, 175, 162);
+            border: 1px solid rgb(254, 204, 201);
+            cursor: pointer;
+        }
+    }
+
+}

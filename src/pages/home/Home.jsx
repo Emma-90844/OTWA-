@@ -6,7 +6,7 @@ import List from "../../components/table/Table";
 import Widget from "../../components/widget/Widget";
 import "./home.scss";
 
-const home = () => {
+const home = ({title}) => {
   return (
     <div className="home">
       <Sidebar />
@@ -22,11 +22,11 @@ const home = () => {
 
         <div className="charts">
           <Featured/>
-          <Chart/>
+          <Chart title="Last 6 Months (Revenue)" aspect={2/ 1}/>
         </div>
         <div className="listContainer">
           <div className="listTitle">
-            Latest Transactions
+            {title}
           </div>
           <List/>
          
