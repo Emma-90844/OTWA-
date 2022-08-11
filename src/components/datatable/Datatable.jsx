@@ -1,25 +1,29 @@
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesourse";
+import { Link } from "react-router-dom";
+
+// Action column
+const actionColumn = [
+  {
+    field: "action",
+    headerName: "Action",
+    width: 200,
+    renderCell: () => {
+      return (
+        <div className="cellAction">
+          <Link style={{ textDecoration: "none" }} to="/users/anyid">
+            <div className="viewButton">View</div>
+          </Link>
+
+          <div className="deleteButton">Delete</div>
+        </div>
+      );
+    },
+  },
+];
 
 const Datatable = () => {
-  // Action column
-  const actionColumn = [
-    {
-      field: "action",
-      headerName: "Action",
-      width: 200,
-      renderCell: () => {
-        return (
-          <div className="cellAction">
-            <div className="viewButton">View</div>
-            <div className="deleteButton">Delete</div>
-          </div>
-        );
-      },
-    },
-  ];
-
   return (
     <div className="datatable">
       <DataGrid

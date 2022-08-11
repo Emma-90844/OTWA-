@@ -21,12 +21,14 @@
 
                 .editButton {
                     position: absolute;
-                    top: 0;
+                    top: 2;
                     right: 0;
-                    font-size: 12px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    font-size: 11px;
                     padding: 5px;
-                    color: rgb(23, 33, 123);
-                    border: 1px solid #3AA323;
+                    color: rgb(181, 184, 213);
+                    border: 5px solid #e6f9e2;
                     cursor: pointer;
                     border-radius: 5px;
                     -webkit-border-radius: 5px;
@@ -89,13 +91,25 @@
                 box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
             }
         }
+        .bottom{
+            padding: 20px;
+            -webkit-box-shadow: 2px 4px 10px 1px rgb(201, 201, 201, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            margin: 20px;
+            color: #3AA323;
+            .title{
+                margin-bottom: 15px;
+            }
+        }
+    
+        .title {
+            font-size: 15px;
+            color: #3AA323;
+            margin-top: 10px;
+    
+        }
 
     }
 
-    .title {
-        font-size: 15px;
-        color: #3AA323;
-        margin-top: 10px;
-
-    }
+ 
 }

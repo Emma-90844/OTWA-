@@ -13,7 +13,7 @@ const Single = () => {
         {/* top */}
         <div className="top">
           <div className="left">
-            <div className="editButton">Edit</div>
+            <div className="editButton">Edit..</div>
             <h1 className="title">Information</h1>
             {/* item */}
             <div className="item">

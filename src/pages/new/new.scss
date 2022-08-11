@@ -1,0 +1,99 @@
+.new {
+    width: 100%;
+    display: flex;
+
+    .newContainer {
+        flex: 6;
+
+        .top,
+        .bottom {
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            -webkit-box-shadow: 2px 4px 10px 1px rgb(201, 201, 201, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+            h1 {
+                color: lightgray;
+                font-size: 20px;
+            }
+
+            .left {
+                flex: 1;
+                text-align: center;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            .right {
+                flex: 2;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-around;
+
+                    .formInput {
+                        width: 40%;
+                        gap: 20px;
+                        color: rgb(56, 137, 56);
+                        height: fit-content;
+                     label{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                       
+                     }
+                   
+                     .icon{
+                        cursor: pointer;
+                        font-size: 30px;
+                     }
+                       
+
+                        input {
+                            width: 90%;
+                            padding: 9px;
+                            outline: none;
+                            border-radius: 5px;
+                            border: 1px solid rgb(222, 209, 209);
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+                            margin-right: 5px;
+                        }
+
+                    }
+
+                    button{
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        background-color:#e5db7f;
+                        color: rgb(36, 72, 35);
+                        font-weight: bold;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+}
+                   
+                }
+            }
+        }
+    }
+}
