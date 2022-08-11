@@ -8,12 +8,12 @@ import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {userInputs, productInputs }from "./formsoursedata"
 
-
+import './style/dark.scss'
 
 function App() {
 
   return (
-    <div >
+    <div className='app dark'>
       <BrowserRouter>
         <Routes>
           <Route path="/">

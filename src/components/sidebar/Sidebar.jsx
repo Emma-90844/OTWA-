@@ -28,11 +28,15 @@ const Sidebar = () => {
           <p className="title">MAIN</p>
           <li>
             <DashboardIcon className="icon" />
-            <span>DashBoard</span>
+
+            <Link style={{ textDecoration: "none" }} to="/">
+              <span>DashBoard</span>
+            </Link>
           </li>
 
           {/* list */}
           <p className="title">LIST</p>
+        
           <li>
             <PersonIcon className="icon" />
             <Link style={{ textDecoration: "none" }} to="/users">
@@ -42,9 +46,8 @@ const Sidebar = () => {
           <li>
             <GroupIcon className="icon" />
             <Link style={{ textDecoration: "none" }} to="/products">
-            <span>Products</span>
+              <span>Products</span>
             </Link>
-           
           </li>
           <li>
             <Inventory2Icon className="icon" />
