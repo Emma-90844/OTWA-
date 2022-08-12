@@ -74,7 +74,9 @@ const Sidebar = () => {
           <p className="title">USER</p>
           <li>
             <AccountBoxIcon className="icon" />
+            <Link to="/users/048103131-391113">
             <span>Profile</span>
+            </Link>
           </li>
           <li>
             <LogoutIcon className="icon" />

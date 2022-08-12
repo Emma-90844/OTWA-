@@ -40,7 +40,9 @@ const Navbar = () => {
                 < ListOutlinedIcon  className="icon"/>
             </div>
             <div className="item">
-               <img className="avatar" src=" https://i.pinimg.com/564x/bc/75/88/bc75882d906b263fbe0550fe59dc7b21.jpg" alt="" />
+              <Link to="/users/24242424sfjsfoj204820">
+              <img className="avatar" src=" https://i.pinimg.com/564x/bc/75/88/bc75882d906b263fbe0550fe59dc7b21.jpg" alt="" />
+              </Link>
             </div>
 
           
